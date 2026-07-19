@@ -1,0 +1,65 @@
+{
+  "svd": {
+    "metrics": {
+      "precision@5": 0.0017478152309612983,
+      "recall@5": 0.004993757802746567,
+      "ndcg@5": 0.00269171315741692,
+      "precision@10": 0.0024968789013732834,
+      "recall@10": 0.012109862671660424,
+      "ndcg@10": 0.005512554876171651,
+      "precision@20": 0.003183520599250936,
+      "recall@20": 0.03241781106949646,
+      "ndcg@20": 0.011418739859083435,
+      "rmse": 1.4756941367607839,
+      "mae": 1.270799303154036
+    },
+    "model_path": "C:\\Users\\Srikar\\OneDrive\\Desktop\\project dm4ml\\models\\svd_model_20260711_212153.pkl",
+    "params": {
+      "n_factors": 50,
+      "algorithm": "SVD"
+    }
+  },
+  "content_based": {
+    "metrics": {
+      "precision@5": 0.014232209737827716,
+      "recall@5": 0.05337078651685393,
+      "ndcg@5": 0.04683497008918259,
+      "precision@10": 0.009987515605493134,
+      "recall@10": 0.06974615064502704,
+      "ndcg@10": 0.053000809502299344,
+      "precision@20": 0.00749063670411985,
+      "recall@20": 0.09540158135663754,
+      "ndcg@20": 0.06057961267894148
+    },
+    "model_path": "C:\\Users\\Srikar\\OneDrive\\Desktop\\project dm4ml\\models\\content_based_model_20260711_212153.pkl",
+    "params": {
+      "algorithm": "cosine_similarity"
+    }
+  },
+  "mlflow_run_id": "8cc11b6ce85b479a80a344a959ca7d09",
+  "sample_recommendations": {
+    "user_id": 207,
+    "recommendations": [
+      {
+        "product_id": 273,
+        "predicted_rating": 3.21
+      },
+      {
+        "product_id": 156,
+        "predicted_rating": 3.17
+      },
+      {
+        "product_id": 177,
+        "predicted_rating": 3.0
+      },
+      {
+        "product_id": 380,
+        "predicted_rating": 2.97
+      },
+      {
+        "product_id": 259,
+        "predicted_rating": 2.95
+      }
+    ]
+  }
+}

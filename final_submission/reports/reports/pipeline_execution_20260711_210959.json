@@ -1,0 +1,35 @@
+{
+  "1_data_generation": {
+    "status": "SUCCESS",
+    "timestamp": "2026-07-11T21:10:01.710196"
+  },
+  "2_data_ingestion": {
+    "status": "SUCCESS",
+    "timestamp": "2026-07-11T21:10:04.175999"
+  },
+  "3_data_validation": {
+    "status": "SUCCESS",
+    "timestamp": "2026-07-11T21:10:04.831281"
+  },
+  "4_data_preparation": {
+    "status": "SUCCESS",
+    "timestamp": "2026-07-11T21:10:12.964080"
+  },
+  "5_feature_engineering": {
+    "status": "SUCCESS",
+    "timestamp": "2026-07-11T21:10:13.525469"
+  },
+  "6_feature_store": {
+    "status": "SUCCESS",
+    "timestamp": "2026-07-11T21:10:14.007628"
+  },
+  "7_data_versioning": {
+    "status": "SUCCESS",
+    "timestamp": "2026-07-11T21:10:14.436888"
+  },
+  "8_model_training": {
+    "status": "FAILED",
+    "error": " Model registry functionality is unavailable; got unsupported URI 'C:\\Users\\Srikar\\OneDrive\\Desktop\\project dm4ml\\mlruns' for model registry data storage. Supported URI schemes are: ['', 'file', 'databricks', 'databricks-uc', 'uc', 'http', 'https', 'postgresql', 'mysql', 'sqlite', 'mssql']. See https://www.mlflow.org/docs/latest/tracking.html#storage for how to run an MLflow server against one of the supported backend storage locations.",
+    "timestamp": "2026-07-11T21:10:21.102520"
+  }
+}

@@ -1,0 +1,227 @@
+2026-07-19 18:53:30.297 | INFO     | src.validation.validate:validate_all:278 - ============================================================
+2026-07-19 18:53:30.299 | INFO     | src.validation.validate:validate_all:279 - Starting Data Validation Pipeline - 20260719_185330
+2026-07-19 18:53:30.300 | INFO     | src.validation.validate:validate_all:280 - ============================================================
+2026-07-19 18:53:30.301 | INFO     | src.validation.validate:validate_source:225 - ========================================
+2026-07-19 18:53:30.301 | INFO     | src.validation.validate:validate_source:226 - Validating: users
+2026-07-19 18:53:30.301 | INFO     | src.validation.validate:validate_source:227 - ========================================
+2026-07-19 18:53:30.306 | INFO     | src.validation.validate:_load_latest:111 - Loaded users_20260719.csv: (1000, 8)
+2026-07-19 18:53:30.367 | INFO     | src.validation.validate:validate_source:258 -   Rows: 1000
+2026-07-19 18:53:30.368 | INFO     | src.validation.validate:validate_source:259 -   Missing: 1.05%
+2026-07-19 18:53:30.368 | INFO     | src.validation.validate:validate_source:260 -   Duplicates: 0.0%
+2026-07-19 18:53:30.368 | INFO     | src.validation.validate:validate_source:261 -   Status: PASS
+2026-07-19 18:53:30.378 | INFO     | src.validation.validate:validate_source:225 - ========================================
+2026-07-19 18:53:30.379 | INFO     | src.validation.validate:validate_source:226 - Validating: products
+2026-07-19 18:53:30.379 | INFO     | src.validation.validate:validate_source:227 - ========================================
+2026-07-19 18:53:30.397 | INFO     | src.validation.validate:_load_latest:111 - Loaded products_20260719.csv: (500, 10)
+2026-07-19 18:53:30.412 | INFO     | src.validation.validate:validate_source:258 -   Rows: 500
+2026-07-19 18:53:30.414 | INFO     | src.validation.validate:validate_source:259 -   Missing: 0.0%
+2026-07-19 18:53:30.414 | INFO     | src.validation.validate:validate_source:260 -   Duplicates: 0.0%
+2026-07-19 18:53:30.415 | INFO     | src.validation.validate:validate_source:261 -   Status: PASS
+2026-07-19 18:53:30.423 | INFO     | src.validation.validate:validate_source:225 - ========================================
+2026-07-19 18:53:30.424 | INFO     | src.validation.validate:validate_source:226 - Validating: clickstream
+2026-07-19 18:53:30.424 | INFO     | src.validation.validate:validate_source:227 - ========================================
+2026-07-19 18:53:30.568 | INFO     | src.validation.validate:_load_latest:111 - Loaded clickstream_20260719.csv: (51000, 8)
+2026-07-19 18:53:30.801 | INFO     | src.validation.validate:validate_source:258 -   Rows: 51000
+2026-07-19 18:53:30.802 | INFO     | src.validation.validate:validate_source:259 -   Missing: 0.0%
+2026-07-19 18:53:30.802 | INFO     | src.validation.validate:validate_source:260 -   Duplicates: 1.96%
+2026-07-19 18:53:30.803 | INFO     | src.validation.validate:validate_source:261 -   Status: PASS
+2026-07-19 18:53:31.008 | INFO     | src.validation.validate:validate_source:225 - ========================================
+2026-07-19 18:53:31.009 | INFO     | src.validation.validate:validate_source:226 - Validating: transactions
+2026-07-19 18:53:31.009 | INFO     | src.validation.validate:validate_source:227 - ========================================
+2026-07-19 18:53:31.024 | INFO     | src.validation.validate:_load_latest:111 - Loaded transactions_20260719.csv: (10000, 9)
+2026-07-19 18:53:31.062 | INFO     | src.validation.validate:validate_source:258 -   Rows: 10000
+2026-07-19 18:53:31.063 | INFO     | src.validation.validate:validate_source:259 -   Missing: 0.22%
+2026-07-19 18:53:31.064 | INFO     | src.validation.validate:validate_source:260 -   Duplicates: 0.0%
+2026-07-19 18:53:31.064 | INFO     | src.validation.validate:validate_source:261 -   Status: PASS
+2026-07-19 18:53:31.106 | INFO     | src.validation.validate:validate_source:225 - ========================================
+2026-07-19 18:53:31.107 | INFO     | src.validation.validate:validate_source:226 - Validating: ratings
+2026-07-19 18:53:31.107 | INFO     | src.validation.validate:validate_source:227 - ========================================
+2026-07-19 18:53:31.138 | INFO     | src.validation.validate:_load_latest:111 - Loaded ratings_20260719.csv: (19596, 5)
+2026-07-19 18:53:31.190 | INFO     | src.validation.validate:validate_source:258 -   Rows: 19596
+2026-07-19 18:53:31.190 | INFO     | src.validation.validate:validate_source:259 -   Missing: 5.97%
+2026-07-19 18:53:31.191 | INFO     | src.validation.validate:validate_source:260 -   Duplicates: 0.0%
+2026-07-19 18:53:31.191 | INFO     | src.validation.validate:validate_source:261 -   Status: WARN
+2026-07-19 18:53:31.191 | WARNING  | src.validation.validate:validate_source:264 -   Issue: Range violations
+2026-07-19 18:53:31.261 | INFO     | src.validation.validate:validate_all:291 - Quality report saved to D:\AIML\Assignments\DMML\Sem2_DMML_Assignment-1_updated_varun\Sem2-DMML-Assignment-1\reports\data_quality_report_20260719_185330.json
+2026-07-19 18:53:31.261 | INFO     | src.validation.validate:validate_all:292 - ============================================================
+2026-07-19 18:53:31.262 | INFO     | src.validation.validate:validate_all:293 - Validation Summary:
+2026-07-19 18:53:31.262 | INFO     | src.validation.validate:validate_all:296 -   users: PASS
+2026-07-19 18:53:31.263 | INFO     | src.validation.validate:validate_all:296 -   products: PASS
+2026-07-19 18:53:31.263 | INFO     | src.validation.validate:validate_all:296 -   clickstream: PASS
+2026-07-19 18:53:31.263 | INFO     | src.validation.validate:validate_all:296 -   transactions: PASS
+2026-07-19 18:53:31.264 | INFO     | src.validation.validate:validate_all:296 -   ratings: WARN
+2026-07-19 18:53:31.264 | INFO     | src.validation.validate:validate_all:297 - ============================================================
+2026-07-19 18:53:31.264 | INFO     | __main__:run_data_validation:63 - Data validation completed.
+2026-07-19 18:53:31.264 | INFO     | __main__:run_sequential_pipeline:226 -   ✓ 3_data_validation completed successfully
+2026-07-19 18:53:31.265 | INFO     | __main__:run_sequential_pipeline:217 - 
+==================================================
+2026-07-19 18:53:31.265 | INFO     | __main__:run_sequential_pipeline:218 - Running: 4_data_preparation
+2026-07-19 18:53:31.265 | INFO     | __main__:run_sequential_pipeline:219 - ==================================================
+2026-07-19 18:53:31.265 | INFO     | __main__:run_data_preparation:69 - TASK: Data Preparation
+2026-07-19 18:53:33.345 | INFO     | src.preparation.prepare:prepare_all:278 - ============================================================
+2026-07-19 18:53:33.345 | INFO     | src.preparation.prepare:prepare_all:279 - Starting Data Preparation - 20260719_185333
+2026-07-19 18:53:33.346 | INFO     | src.preparation.prepare:prepare_all:280 - ============================================================
+2026-07-19 18:53:33.346 | INFO     | src.preparation.prepare:clean_users:46 - Cleaning users data...
+2026-07-19 18:53:33.436 | INFO     | src.preparation.prepare:clean_users:90 -   Users cleaned: 1000 rows
+2026-07-19 18:53:33.442 | INFO     | src.preparation.prepare:clean_products:95 - Cleaning products data...
+2026-07-19 18:53:33.456 | INFO     | src.preparation.prepare:clean_products:142 -   Products cleaned: 500 rows
+2026-07-19 18:53:33.462 | INFO     | src.preparation.prepare:clean_clickstream:147 - Cleaning clickstream data...
+2026-07-19 18:53:33.607 | INFO     | src.preparation.prepare:clean_clickstream:156 -   Removed 1000 duplicate events
+2026-07-19 18:53:33.670 | INFO     | src.preparation.prepare:clean_clickstream:184 -   Clickstream cleaned: 50000 rows
+2026-07-19 18:53:33.978 | INFO     | src.preparation.prepare:clean_transactions:189 - Cleaning transactions data...
+2026-07-19 18:53:34.008 | INFO     | src.preparation.prepare:clean_transactions:227 -   Transactions cleaned: 10000 rows
+2026-07-19 18:53:34.069 | INFO     | src.preparation.prepare:clean_ratings:232 - Cleaning ratings data...
+2026-07-19 18:53:34.106 | INFO     | src.preparation.prepare:clean_ratings:241 -   Removed 193 invalid ratings
+2026-07-19 18:53:34.128 | INFO     | src.preparation.prepare:clean_ratings:273 -   Ratings cleaned: 19403 rows, sparsity=96.12%
+2026-07-19 18:53:34.231 | INFO     | src.preparation.prepare:prepare_all:313 - EDA summary saved to D:\AIML\Assignments\DMML\Sem2_DMML_Assignment-1_updated_varun\Sem2-DMML-Assignment-1\reports\eda_summary_20260719_185333.json
+2026-07-19 18:53:34.232 | INFO     | src.preparation.prepare:prepare_all:315 - ============================================================
+2026-07-19 18:53:34.232 | INFO     | src.preparation.prepare:prepare_all:316 - Data preparation complete!
+2026-07-19 18:53:34.232 | INFO     | src.preparation.prepare:prepare_all:317 - ============================================================
+2026-07-19 18:53:34.233 | INFO     | __main__:run_data_preparation:73 - Data preparation completed.
+2026-07-19 18:53:34.237 | INFO     | __main__:run_sequential_pipeline:226 -   ✓ 4_data_preparation completed successfully
+2026-07-19 18:53:34.238 | INFO     | __main__:run_sequential_pipeline:217 - 
+==================================================
+2026-07-19 18:53:34.238 | INFO     | __main__:run_sequential_pipeline:218 - Running: 5_feature_engineering
+2026-07-19 18:53:34.238 | INFO     | __main__:run_sequential_pipeline:219 - ==================================================
+2026-07-19 18:53:34.239 | INFO     | __main__:run_feature_engineering:79 - TASK: Feature Engineering
+2026-07-19 18:53:34.249 | INFO     | src.transformation.transform:transform_all:359 - ============================================================
+2026-07-19 18:53:34.249 | INFO     | src.transformation.transform:transform_all:360 - Starting Feature Engineering - 20260719_185334
+2026-07-19 18:53:34.250 | INFO     | src.transformation.transform:transform_all:361 - ============================================================
+2026-07-19 18:53:34.250 | INFO     | src.transformation.transform:create_user_features:93 - Creating user features...
+2026-07-19 18:53:34.567 | INFO     | src.transformation.transform:create_user_features:168 -   User features: (1000, 15)
+2026-07-19 18:53:34.572 | INFO     | src.transformation.transform:create_item_features:191 - Creating item features...
+2026-07-19 18:53:34.796 | INFO     | src.transformation.transform:create_item_features:262 -   Item features: (500, 13)
+2026-07-19 18:53:34.800 | INFO     | src.transformation.transform:create_user_item_features:283 - Creating user-item interaction features...
+2026-07-19 18:53:35.114 | INFO     | src.transformation.transform:create_user_item_features:348 -   User-item features: (19403, 7)
+2026-07-19 18:53:35.118 | INFO     | src.transformation.transform:transform_all:371 - SQL schema saved to D:\AIML\Assignments\DMML\Sem2_DMML_Assignment-1_updated_varun\Sem2-DMML-Assignment-1\data\features\schema.sql
+2026-07-19 18:53:35.119 | INFO     | src.transformation.transform:transform_all:377 - Feature metadata saved to D:\AIML\Assignments\DMML\Sem2_DMML_Assignment-1_updated_varun\Sem2-DMML-Assignment-1\reports\feature_metadata_20260719_185334.json
+2026-07-19 18:53:35.119 | INFO     | src.transformation.transform:transform_all:379 - ============================================================
+2026-07-19 18:53:35.120 | INFO     | src.transformation.transform:transform_all:380 - Feature engineering complete!
+2026-07-19 18:53:35.120 | INFO     | src.transformation.transform:transform_all:381 - ============================================================
+2026-07-19 18:53:35.120 | INFO     | __main__:run_feature_engineering:83 - Feature engineering completed.
+2026-07-19 18:53:35.121 | INFO     | __main__:run_sequential_pipeline:226 -   ✓ 5_feature_engineering completed successfully
+2026-07-19 18:53:35.121 | INFO     | __main__:run_sequential_pipeline:217 - 
+==================================================
+2026-07-19 18:53:35.121 | INFO     | __main__:run_sequential_pipeline:218 - Running: 6_feature_store
+2026-07-19 18:53:35.122 | INFO     | __main__:run_sequential_pipeline:219 - ==================================================
+2026-07-19 18:53:35.122 | INFO     | __main__:run_feature_store:89 - TASK: Feature Store
+2026-07-19 18:53:35.148 | INFO     | src.feature_store.store:main:189 - ============================================================
+2026-07-19 18:53:35.148 | INFO     | src.feature_store.store:main:190 - Initializing Feature Store
+2026-07-19 18:53:35.149 | INFO     | src.feature_store.store:main:191 - ============================================================
+2026-07-19 18:53:35.178 | INFO     | src.feature_store.store:_init_registry:74 - Feature store registry initialized.
+2026-07-19 18:53:35.198 | INFO     | src.feature_store.store:register_feature_set:79 - Registering feature set: user_features (v_20260719_185335)
+2026-07-19 18:53:35.234 | INFO     | src.feature_store.store:register_feature_set:110 -   Registered user_features: 1000 rows, 15 features
+2026-07-19 18:53:35.242 | INFO     | src.feature_store.store:register_feature_metadata:136 -   Registered 15 feature descriptions for user_features
+2026-07-19 18:53:35.285 | INFO     | src.feature_store.store:register_feature_set:79 - Registering feature set: item_features (v_20260719_185335)
+2026-07-19 18:53:35.306 | INFO     | src.feature_store.store:register_feature_set:110 -   Registered item_features: 500 rows, 13 features
+2026-07-19 18:53:35.316 | INFO     | src.feature_store.store:register_feature_metadata:136 -   Registered 13 feature descriptions for item_features
+2026-07-19 18:53:35.342 | INFO     | src.feature_store.store:register_feature_set:79 - Registering feature set: user_item_features (v_20260719_185335)
+2026-07-19 18:53:35.483 | INFO     | src.feature_store.store:register_feature_set:110 -   Registered user_item_features: 19403 rows, 7 features
+2026-07-19 18:53:35.491 | INFO     | src.feature_store.store:register_feature_metadata:136 -   Registered 7 feature descriptions for user_item_features
+2026-07-19 18:53:35.491 | INFO     | src.feature_store.store:main:235 - 
+--- Feature Store Demo ---
+2026-07-19 18:53:35.515 | INFO     | src.feature_store.store:get_feature_set:153 - Retrieved user_features: (1000, 15)
+2026-07-19 18:53:35.535 | INFO     | src.feature_store.store:get_feature_set:153 - Retrieved item_features: (500, 13)
+2026-07-19 18:53:35.565 | INFO     | src.feature_store.store:get_feature_set:153 - Retrieved user_item_features: (19403, 7)
+2026-07-19 18:53:35.569 | INFO     | src.feature_store.store:main:246 - ============================================================
+2026-07-19 18:53:35.569 | INFO     | src.feature_store.store:main:247 - Feature store operations complete!
+2026-07-19 18:53:35.570 | INFO     | src.feature_store.store:main:248 - ============================================================
+2026-07-19 18:53:35.570 | INFO     | __main__:run_feature_store:92 - Feature store operations completed.
+2026-07-19 18:53:35.571 | INFO     | __main__:run_sequential_pipeline:226 -   ✓ 6_feature_store completed successfully
+2026-07-19 18:53:35.571 | INFO     | __main__:run_sequential_pipeline:217 - 
+==================================================
+2026-07-19 18:53:35.571 | INFO     | __main__:run_sequential_pipeline:218 - Running: 7_data_versioning
+2026-07-19 18:53:35.572 | INFO     | __main__:run_sequential_pipeline:219 - ==================================================
+2026-07-19 18:53:35.572 | INFO     | __main__:run_data_versioning:98 - TASK: Data Versioning
+2026-07-19 18:53:35.581 | INFO     | src.versioning.version:version_all:153 - ============================================================
+2026-07-19 18:53:35.582 | INFO     | src.versioning.version:version_all:154 - Starting Data Versioning - 20260719_185335
+2026-07-19 18:53:35.582 | INFO     | src.versioning.version:version_all:155 - ============================================================
+2026-07-19 18:53:35.734 | INFO     | src.versioning.version:version_dataset:110 -   Versioned raw_clickstream as v_20260719_185335 (hash: 7a74c5585c00...)
+2026-07-19 18:53:35.744 | INFO     | src.versioning.version:version_dataset:110 -   Versioned raw_products as v_20260719_185335 (hash: dff78e3750d4...)
+2026-07-19 18:53:35.795 | INFO     | src.versioning.version:version_dataset:110 -   Versioned raw_ratings as v_20260719_185335 (hash: d253fb1ad987...)
+2026-07-19 18:53:35.818 | INFO     | src.versioning.version:version_dataset:110 -   Versioned raw_transactions as v_20260719_185335 (hash: 981f2b28e2e5...)
+2026-07-19 18:53:35.828 | INFO     | src.versioning.version:version_dataset:110 -   Versioned raw_users as v_20260719_185335 (hash: e2cf3064aeff...)
+2026-07-19 18:53:35.986 | INFO     | src.versioning.version:version_dataset:110 -   Versioned processed_clickstream_clean as v_20260719_185335 (hash: 0c12a572e0f0...)
+2026-07-19 18:53:35.997 | INFO     | src.versioning.version:version_dataset:110 -   Versioned processed_products_clean as v_20260719_185335 (hash: 2936fc91d343...)
+2026-07-19 18:53:36.047 | INFO     | src.versioning.version:version_dataset:110 -   Versioned processed_ratings_clean as v_20260719_185335 (hash: da8e3229e37f...)
+2026-07-19 18:53:36.071 | INFO     | src.versioning.version:version_dataset:110 -   Versioned processed_transactions_clean as v_20260719_185335 (hash: 0998edc734d9...)
+2026-07-19 18:53:36.080 | INFO     | src.versioning.version:version_dataset:110 -   Versioned processed_users_clean as v_20260719_185335 (hash: e1d3c71d967b...)
+2026-07-19 18:53:36.087 | INFO     | src.versioning.version:version_dataset:110 -   Versioned features_item_features as v_20260719_185335 (hash: c612561658fe...)
+2026-07-19 18:53:36.098 | INFO     | src.versioning.version:version_dataset:110 -   Versioned features_user_features as v_20260719_185335 (hash: f3d2164bef78...)
+2026-07-19 18:53:36.115 | INFO     | src.versioning.version:version_dataset:110 -   Versioned features_user_item_features as v_20260719_185335 (hash: 26ae708f78b4...)
+2026-07-19 18:53:36.115 | INFO     | src.versioning.version:version_all:189 - 
+Versioning Summary:
+2026-07-19 18:53:36.118 | INFO     | src.versioning.version:version_all:194 - ============================================================
+2026-07-19 18:53:36.119 | INFO     | src.versioning.version:version_all:195 - Data versioning complete!
+2026-07-19 18:53:36.119 | INFO     | src.versioning.version:version_all:196 - ============================================================
+2026-07-19 18:53:36.119 | INFO     | __main__:run_data_versioning:102 - Data versioning completed.
+2026-07-19 18:53:36.120 | INFO     | __main__:run_sequential_pipeline:226 -   ✓ 7_data_versioning completed successfully
+2026-07-19 18:53:36.120 | INFO     | __main__:run_sequential_pipeline:217 - 
+==================================================
+2026-07-19 18:53:36.121 | INFO     | __main__:run_sequential_pipeline:218 - Running: 8_model_training
+2026-07-19 18:53:36.121 | INFO     | __main__:run_sequential_pipeline:219 - ==================================================
+2026-07-19 18:53:36.122 | INFO     | __main__:run_model_training:108 - TASK: Model Training
+2026-07-19 18:53:40.961 | INFO     | src.training.train:__init__:52 - MLflow tracking enabled.
+2026-07-19 18:53:40.962 | INFO     | src.training.train:train_and_evaluate:365 - ============================================================
+2026-07-19 18:53:40.962 | INFO     | src.training.train:train_and_evaluate:366 - Starting Model Training - 20260719_185338
+2026-07-19 18:53:40.963 | INFO     | src.training.train:train_and_evaluate:367 - ============================================================
+2026-07-19 18:53:40.997 | INFO     | src.training.train:_load_ratings:64 - Loaded ratings: (19403, 5)
+2026-07-19 18:53:41.002 | INFO     | src.training.train:prepare_data:72 - Train: 15522, Test: 3881
+2026-07-19 18:53:41.003 | INFO     | src.training.train:train_svd:95 - Training SVD model (n_factors=50)...
+2026-07-19 18:53:41.172 | INFO     | src.training.train:train_svd:138 -   SVD model trained: U=(1000, 50), Vt=(50, 500)
+2026-07-19 18:53:41.173 | INFO     | src.training.train:evaluate_model:184 - Evaluating model (k=[5, 10, 20])...
+2026-07-19 18:53:42.939 | INFO     | src.training.train:evaluate_model:321 -   Evaluation Results:
+2026-07-19 18:53:42.939 | INFO     | src.training.train:evaluate_model:323 -     precision@5: 0.0017
+2026-07-19 18:53:42.940 | INFO     | src.training.train:evaluate_model:323 -     recall@5: 0.0050
+2026-07-19 18:53:42.941 | INFO     | src.training.train:evaluate_model:323 -     ndcg@5: 0.0027
+2026-07-19 18:53:42.941 | INFO     | src.training.train:evaluate_model:323 -     precision@10: 0.0026
+2026-07-19 18:53:42.942 | INFO     | src.training.train:evaluate_model:323 -     recall@10: 0.0127
+2026-07-19 18:53:42.942 | INFO     | src.training.train:evaluate_model:323 -     ndcg@10: 0.0057
+2026-07-19 18:53:42.943 | INFO     | src.training.train:evaluate_model:323 -     precision@20: 0.0030
+2026-07-19 18:53:42.943 | INFO     | src.training.train:evaluate_model:323 -     recall@20: 0.0293
+2026-07-19 18:53:42.943 | INFO     | src.training.train:evaluate_model:323 -     ndcg@20: 0.0107
+2026-07-19 18:53:42.944 | INFO     | src.training.train:evaluate_model:323 -     rmse: 1.4755
+2026-07-19 18:53:42.944 | INFO     | src.training.train:evaluate_model:323 -     mae: 1.2706
+2026-07-19 18:53:42.952 | INFO     | src.training.train:save_model:332 -   Model saved: D:\AIML\Assignments\DMML\Sem2_DMML_Assignment-1_updated_varun\Sem2-DMML-Assignment-1\models\svd_model_20260719_185338.pkl
+2026-07-19 18:53:42.952 | INFO     | src.training.train:train_content_based:143 - Training content-based model...
+2026-07-19 18:53:42.961 | INFO     | src.training.train:train_content_based:173 -   Content-based model: 500 items, 12 features
+2026-07-19 18:53:42.962 | INFO     | src.training.train:evaluate_model:184 - Evaluating model (k=[5, 10, 20])...
+2026-07-19 18:53:43.347 | INFO     | src.training.train:evaluate_model:321 -   Evaluation Results:
+2026-07-19 18:53:43.348 | INFO     | src.training.train:evaluate_model:323 -     precision@5: 0.0140
+2026-07-19 18:53:43.348 | INFO     | src.training.train:evaluate_model:323 -     recall@5: 0.0521
+2026-07-19 18:53:43.349 | INFO     | src.training.train:evaluate_model:323 -     ndcg@5: 0.0460
+2026-07-19 18:53:43.349 | INFO     | src.training.train:evaluate_model:323 -     precision@10: 0.0100
+2026-07-19 18:53:43.349 | INFO     | src.training.train:evaluate_model:323 -     recall@10: 0.0691
+2026-07-19 18:53:43.350 | INFO     | src.training.train:evaluate_model:323 -     ndcg@10: 0.0525
+2026-07-19 18:53:43.350 | INFO     | src.training.train:evaluate_model:323 -     precision@20: 0.0075
+2026-07-19 18:53:43.351 | INFO     | src.training.train:evaluate_model:323 -     recall@20: 0.0948
+2026-07-19 18:53:43.351 | INFO     | src.training.train:evaluate_model:323 -     ndcg@20: 0.0600
+2026-07-19 18:53:43.353 | INFO     | src.training.train:save_model:332 -   Model saved: D:\AIML\Assignments\DMML\Sem2_DMML_Assignment-1_updated_varun\Sem2-DMML-Assignment-1\models\content_based_model_20260719_185338.pkl
+2026-07-19 18:53:44.802 | INFO     | src.training.train:train_and_evaluate:424 -   MLflow run ID: a8ec542a20e9453d961634f656a3af9c
+2026-07-19 18:53:44.816 | INFO     | src.training.train:train_and_evaluate:434 - 
+Sample recommendations for user 207:
+2026-07-19 18:53:44.817 | INFO     | src.training.train:train_and_evaluate:436 -   Product 273: 3.21
+2026-07-19 18:53:44.817 | INFO     | src.training.train:train_and_evaluate:436 -   Product 156: 3.17
+2026-07-19 18:53:44.818 | INFO     | src.training.train:train_and_evaluate:436 -   Product 177: 3.01
+2026-07-19 18:53:44.818 | INFO     | src.training.train:train_and_evaluate:436 -   Product 380: 2.97
+2026-07-19 18:53:44.818 | INFO     | src.training.train:train_and_evaluate:436 -   Product 259: 2.95
+2026-07-19 18:53:44.819 | INFO     | src.training.train:train_and_evaluate:442 - 
+Performance report saved to D:\AIML\Assignments\DMML\Sem2_DMML_Assignment-1_updated_varun\Sem2-DMML-Assignment-1\reports\model_performance_20260719_185338.json
+2026-07-19 18:53:44.820 | INFO     | src.training.train:train_and_evaluate:444 - ============================================================
+2026-07-19 18:53:44.820 | INFO     | src.training.train:train_and_evaluate:445 - Model training and evaluation complete!
+2026-07-19 18:53:44.820 | INFO     | src.training.train:train_and_evaluate:446 - ============================================================
+2026-07-19 18:53:44.824 | INFO     | __main__:run_model_training:112 - Model training completed.
+2026-07-19 18:53:44.825 | INFO     | __main__:run_sequential_pipeline:226 -   ✓ 8_model_training completed successfully
+2026-07-19 18:53:44.827 | INFO     | __main__:run_sequential_pipeline:242 - 
+======================================================================
+2026-07-19 18:53:44.827 | INFO     | __main__:run_sequential_pipeline:243 -   Pipeline Execution Summary
+2026-07-19 18:53:44.828 | INFO     | __main__:run_sequential_pipeline:244 - ======================================================================
+2026-07-19 18:53:44.828 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 1_data_generation: SUCCESS
+2026-07-19 18:53:44.829 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 2_data_ingestion: SUCCESS
+2026-07-19 18:53:44.829 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 3_data_validation: SUCCESS
+2026-07-19 18:53:44.829 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 4_data_preparation: SUCCESS
+2026-07-19 18:53:44.830 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 5_feature_engineering: SUCCESS
+2026-07-19 18:53:44.830 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 6_feature_store: SUCCESS
+2026-07-19 18:53:44.831 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 7_data_versioning: SUCCESS
+2026-07-19 18:53:44.831 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 8_model_training: SUCCESS
+2026-07-19 18:53:44.831 | INFO     | __main__:run_sequential_pipeline:249 - ======================================================================

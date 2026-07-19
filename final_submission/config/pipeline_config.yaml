@@ -1,0 +1,78 @@
+# RecoMart Data Pipeline Configuration
+
+project:
+  name: "RecoMart Recommendation Pipeline"
+  version: "1.0.0"
+  description: "End-to-end data management pipeline for e-commerce recommendation system"
+
+data_sources:
+  clickstream:
+    type: "csv"
+    path: "data/raw/clickstream/"
+    format: "csv"
+    schedule: "daily"
+  
+  transactions:
+    type: "csv"
+    path: "data/raw/transactions/"
+    format: "csv"
+    schedule: "daily"
+  
+  products:
+    type: "api"
+    endpoint: "https://fakestoreapi.com/products"
+    path: "data/raw/products/"
+    format: "json"
+    schedule: "weekly"
+  
+  users:
+    type: "csv"
+    path: "data/raw/users/"
+    format: "csv"
+    schedule: "weekly"
+  
+  ratings:
+    type: "csv"
+    path: "data/raw/ratings/"
+    format: "csv"
+    schedule: "daily"
+
+storage:
+  raw_data: "data/raw/"
+  validated_data: "data/validated/"
+  processed_data: "data/processed/"
+  features: "data/features/"
+  models: "models/"
+  logs: "logs/"
+
+validation:
+  rating_min: 1
+  rating_max: 5
+  max_missing_pct: 0.15
+  max_duplicate_pct: 0.05
+
+model:
+  type: "collaborative_filtering"
+  algorithm: "SVD"
+  n_factors: 50
+  n_epochs: 20
+  learning_rate: 0.005
+  regularization: 0.02
+  test_size: 0.2
+  random_state: 42
+
+evaluation:
+  metrics:
+    - "precision_at_k"
+    - "recall_at_k"
+    - "ndcg_at_k"
+  k_values: [5, 10, 20]
+
+feature_store:
+  provider: "local"
+  registry: "data/feature_store/registry.db"
+  online_store_path: "data/feature_store/online/"
+
+mlflow:
+  tracking_uri: "mlruns/"
+  experiment_name: "recomart_recommendation"

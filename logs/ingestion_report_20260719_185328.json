@@ -1,0 +1,32 @@
+{
+  "clickstream": {
+    "status": "SUCCESS",
+    "rows": 51000,
+    "columns": 8,
+    "timestamp": "20260719_185328"
+  },
+  "transactions": {
+    "status": "SUCCESS",
+    "rows": 10000,
+    "columns": 9,
+    "timestamp": "20260719_185328"
+  },
+  "products": {
+    "status": "SUCCESS",
+    "rows": 20,
+    "columns": 7,
+    "timestamp": "20260719_185328"
+  },
+  "users": {
+    "status": "SUCCESS",
+    "rows": 1000,
+    "columns": 8,
+    "timestamp": "20260719_185328"
+  },
+  "ratings": {
+    "status": "SUCCESS",
+    "rows": 19596,
+    "columns": 5,
+    "timestamp": "20260719_185328"
+  }
+}

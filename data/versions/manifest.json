@@ -1,0 +1,468 @@
+{
+  "datasets": {
+    "raw_clickstream": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:35.733578",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\raw\\clickstream\\clickstream_20260719.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\raw_clickstream\\v_20260719_185335\\clickstream_20260719.csv",
+          "hash": "7a74c5585c006517d6f0133fcac52805022cbf0031465d9a9a9067cd994ea15e",
+          "description": "Raw clickstream data",
+          "stats": {
+            "rows": 51000,
+            "columns": 8,
+            "column_names": [
+              "event_id",
+              "user_id",
+              "product_id",
+              "event_type",
+              "timestamp",
+              "session_id",
+              "device",
+              "page_url"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "7a74c5585c006517d6f0133fcac52805022cbf0031465d9a9a9067cd994ea15e",
+      "latest_version": "v_20260719_185335"
+    },
+    "raw_products": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:35.743205",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\raw\\products\\products_20260719.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\raw_products\\v_20260719_185335\\products_20260719.csv",
+          "hash": "dff78e3750d4a8b2f1ec852b8e14933619150c63712bf9f2751ae32db3b66ac3",
+          "description": "Raw products data",
+          "stats": {
+            "rows": 500,
+            "columns": 10,
+            "column_names": [
+              "product_id",
+              "name",
+              "category",
+              "subcategory",
+              "price",
+              "brand",
+              "avg_rating",
+              "n_reviews",
+              "in_stock",
+              "description"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "dff78e3750d4a8b2f1ec852b8e14933619150c63712bf9f2751ae32db3b66ac3",
+      "latest_version": "v_20260719_185335"
+    },
+    "raw_ratings": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:35.794485",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\raw\\ratings\\ratings_20260719.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\raw_ratings\\v_20260719_185335\\ratings_20260719.csv",
+          "hash": "d253fb1ad9874ab0ead1ed7d23806069ae56546cc27fd29f0c6f439adfa908b7",
+          "description": "Raw ratings data",
+          "stats": {
+            "rows": 19596,
+            "columns": 5,
+            "column_names": [
+              "user_id",
+              "product_id",
+              "rating",
+              "review_text",
+              "timestamp"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "d253fb1ad9874ab0ead1ed7d23806069ae56546cc27fd29f0c6f439adfa908b7",
+      "latest_version": "v_20260719_185335"
+    },
+    "raw_transactions": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:35.817784",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\raw\\transactions\\transactions_20260719.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\raw_transactions\\v_20260719_185335\\transactions_20260719.csv",
+          "hash": "981f2b28e2e593f3e820d271fe090803566de660582f5992ec19a8782df7804a",
+          "description": "Raw transactions data",
+          "stats": {
+            "rows": 10000,
+            "columns": 9,
+            "column_names": [
+              "transaction_id",
+              "user_id",
+              "product_id",
+              "quantity",
+              "unit_price",
+              "total_amount",
+              "payment_method",
+              "transaction_date",
+              "status"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "981f2b28e2e593f3e820d271fe090803566de660582f5992ec19a8782df7804a",
+      "latest_version": "v_20260719_185335"
+    },
+    "raw_users": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:35.826204",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\raw\\users\\users_20260719.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\raw_users\\v_20260719_185335\\users_20260719.csv",
+          "hash": "e2cf3064aeff570d2d112266c1e94034ef91fc7f4a80b468da2b18f098197c32",
+          "description": "Raw users data",
+          "stats": {
+            "rows": 1000,
+            "columns": 8,
+            "column_names": [
+              "user_id",
+              "username",
+              "email",
+              "age",
+              "gender",
+              "country",
+              "signup_date",
+              "is_premium"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "e2cf3064aeff570d2d112266c1e94034ef91fc7f4a80b468da2b18f098197c32",
+      "latest_version": "v_20260719_185335"
+    },
+    "processed_clickstream_clean": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:35.985049",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\processed\\clickstream_clean.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\processed_clickstream_clean\\v_20260719_185335\\clickstream_clean.csv",
+          "hash": "0c12a572e0f0cc4874e59a65b6a5d5d61b1ed7a4a5ee237576aeb62b92d9606b",
+          "description": "Processed clickstream_clean data",
+          "stats": {
+            "rows": 50000,
+            "columns": 12,
+            "column_names": [
+              "event_id",
+              "user_id",
+              "product_id",
+              "event_type",
+              "timestamp",
+              "session_id",
+              "device",
+              "page_url",
+              "hour_of_day",
+              "day_of_week",
+              "event_type_encoded",
+              "device_encoded"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "0c12a572e0f0cc4874e59a65b6a5d5d61b1ed7a4a5ee237576aeb62b92d9606b",
+      "latest_version": "v_20260719_185335"
+    },
+    "processed_products_clean": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:35.996262",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\processed\\products_clean.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\processed_products_clean\\v_20260719_185335\\products_clean.csv",
+          "hash": "2936fc91d3438a5edead92a6c902f6b577382990878fe6ef525e8101ee12c924",
+          "description": "Processed products_clean data",
+          "stats": {
+            "rows": 500,
+            "columns": 12,
+            "column_names": [
+              "product_id",
+              "name",
+              "category",
+              "subcategory",
+              "price",
+              "brand",
+              "avg_rating",
+              "n_reviews",
+              "in_stock",
+              "description",
+              "price_normalized",
+              "category_encoded"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "2936fc91d3438a5edead92a6c902f6b577382990878fe6ef525e8101ee12c924",
+      "latest_version": "v_20260719_185335"
+    },
+    "processed_ratings_clean": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:36.044878",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\processed\\ratings_clean.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\processed_ratings_clean\\v_20260719_185335\\ratings_clean.csv",
+          "hash": "da8e3229e37ff534a0837bbe9c8bb0340179ba79477cd81b17bce8a57054facf",
+          "description": "Processed ratings_clean data",
+          "stats": {
+            "rows": 19403,
+            "columns": 5,
+            "column_names": [
+              "user_id",
+              "product_id",
+              "rating",
+              "review_text",
+              "timestamp"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "da8e3229e37ff534a0837bbe9c8bb0340179ba79477cd81b17bce8a57054facf",
+      "latest_version": "v_20260719_185335"
+    },
+    "processed_transactions_clean": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:36.070164",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\processed\\transactions_clean.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\processed_transactions_clean\\v_20260719_185335\\transactions_clean.csv",
+          "hash": "0998edc734d93c6e75e4c74ed76f191cddbe9f73c831d2faaf71d8ca1b230004",
+          "description": "Processed transactions_clean data",
+          "stats": {
+            "rows": 10000,
+            "columns": 10,
+            "column_names": [
+              "transaction_id",
+              "user_id",
+              "product_id",
+              "quantity",
+              "unit_price",
+              "total_amount",
+              "payment_method",
+              "transaction_date",
+              "status",
+              "payment_encoded"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "0998edc734d93c6e75e4c74ed76f191cddbe9f73c831d2faaf71d8ca1b230004",
+      "latest_version": "v_20260719_185335"
+    },
+    "processed_users_clean": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:36.079229",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\processed\\users_clean.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\processed_users_clean\\v_20260719_185335\\users_clean.csv",
+          "hash": "e1d3c71d967bd850800797787417399383ec981c5b2994907946d6a5c311f549",
+          "description": "Processed users_clean data",
+          "stats": {
+            "rows": 1000,
+            "columns": 10,
+            "column_names": [
+              "user_id",
+              "username",
+              "email",
+              "age",
+              "gender",
+              "country",
+              "signup_date",
+              "is_premium",
+              "gender_encoded",
+              "account_age_days"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "e1d3c71d967bd850800797787417399383ec981c5b2994907946d6a5c311f549",
+      "latest_version": "v_20260719_185335"
+    },
+    "features_item_features": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:36.086080",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\features\\item_features.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\features_item_features\\v_20260719_185335\\item_features.csv",
+          "hash": "c612561658fe1c1ba0d2e097b7d33fcaf71b3bbb9dc07be4b1029ec4ae3bea9d",
+          "description": "Feature set: item_features",
+          "stats": {
+            "rows": 500,
+            "columns": 13,
+            "column_names": [
+              "product_id",
+              "total_ratings",
+              "avg_user_rating",
+              "rating_variance",
+              "total_purchases",
+              "total_revenue",
+              "total_views",
+              "price",
+              "category_encoded",
+              "in_stock",
+              "price_normalized",
+              "view_to_purchase_ratio",
+              "popularity_score"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "c612561658fe1c1ba0d2e097b7d33fcaf71b3bbb9dc07be4b1029ec4ae3bea9d",
+      "latest_version": "v_20260719_185335"
+    },
+    "features_user_features": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:36.095615",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\features\\user_features.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\features_user_features\\v_20260719_185335\\user_features.csv",
+          "hash": "f3d2164bef7883b7c86442b97c5b80b4d1b9521b65932ff5f7123cad1853968b",
+          "description": "Feature set: user_features",
+          "stats": {
+            "rows": 1000,
+            "columns": 15,
+            "column_names": [
+              "user_id",
+              "total_ratings",
+              "avg_rating",
+              "rating_std",
+              "total_purchases",
+              "total_spend",
+              "avg_order_value",
+              "total_clicks",
+              "view_count",
+              "add_to_cart_count",
+              "account_age_days",
+              "is_premium",
+              "gender_encoded",
+              "purchase_frequency",
+              "activity_score"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "f3d2164bef7883b7c86442b97c5b80b4d1b9521b65932ff5f7123cad1853968b",
+      "latest_version": "v_20260719_185335"
+    },
+    "features_user_item_features": {
+      "versions": [
+        {
+          "version_id": "v_20260719_185335",
+          "timestamp": "2026-07-19T18:53:36.113228",
+          "source_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\features\\user_item_features.csv",
+          "versioned_path": "D:\\AIML\\Assignments\\DMML\\Sem2_DMML_Assignment-1_updated_varun\\Sem2-DMML-Assignment-1\\data\\versions\\features_user_item_features\\v_20260719_185335\\user_item_features.csv",
+          "hash": "26ae708f78b45573a9cfca5a44fe33060c0b8f456c4189556f79b373f6cc367f",
+          "description": "Feature set: user_item_features",
+          "stats": {
+            "rows": 19403,
+            "columns": 7,
+            "column_names": [
+              "user_id",
+              "product_id",
+              "rating",
+              "n_interactions",
+              "has_viewed",
+              "has_carted",
+              "has_purchased"
+            ]
+          }
+        }
+      ],
+      "latest_hash": "26ae708f78b45573a9cfca5a44fe33060c0b8f456c4189556f79b373f6cc367f",
+      "latest_version": "v_20260719_185335"
+    }
+  },
+  "history": [
+    {
+      "action": "version_created",
+      "dataset": "raw_clickstream",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:35.733595"
+    },
+    {
+      "action": "version_created",
+      "dataset": "raw_products",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:35.743226"
+    },
+    {
+      "action": "version_created",
+      "dataset": "raw_ratings",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:35.794502"
+    },
+    {
+      "action": "version_created",
+      "dataset": "raw_transactions",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:35.817796"
+    },
+    {
+      "action": "version_created",
+      "dataset": "raw_users",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:35.826221"
+    },
+    {
+      "action": "version_created",
+      "dataset": "processed_clickstream_clean",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:35.985064"
+    },
+    {
+      "action": "version_created",
+      "dataset": "processed_products_clean",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:35.996276"
+    },
+    {
+      "action": "version_created",
+      "dataset": "processed_ratings_clean",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:36.044896"
+    },
+    {
+      "action": "version_created",
+      "dataset": "processed_transactions_clean",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:36.070174"
+    },
+    {
+      "action": "version_created",
+      "dataset": "processed_users_clean",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:36.079245"
+    },
+    {
+      "action": "version_created",
+      "dataset": "features_item_features",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:36.086091"
+    },
+    {
+      "action": "version_created",
+      "dataset": "features_user_features",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:36.095628"
+    },
+    {
+      "action": "version_created",
+      "dataset": "features_user_item_features",
+      "version": "v_20260719_185335",
+      "timestamp": "2026-07-19T18:53:36.113259"
+    }
+  ]
+}

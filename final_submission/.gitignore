@@ -1,0 +1,42 @@
+# RecoMart Data Pipeline - .gitignore
+
+# Data
+data/raw/
+data/validated/
+data/processed/
+data/features/
+data/feature_store/
+data/versions/
+
+# Models
+models/
+
+# Logs
+logs/
+
+# MLflow
+mlruns/
+
+# Reports (generated)
+reports/*.json
+reports/*.png
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/

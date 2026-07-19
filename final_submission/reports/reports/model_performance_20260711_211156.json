@@ -1,0 +1,54 @@
+{
+  "svd": {
+    "metrics": {
+      "precision@5": 0.0017478152309612983,
+      "recall@5": 0.004993757802746567,
+      "ndcg@5": 0.0026510989045944095,
+      "precision@10": 0.0026217228464419477,
+      "recall@10": 0.012734082397003745,
+      "ndcg@10": 0.005699172363789996,
+      "precision@20": 0.0029962546816479406,
+      "recall@20": 0.029296712442779854,
+      "ndcg@20": 0.010703123699418487,
+      "rmse": 1.4754615900245505,
+      "mae": 1.2705953133738204
+    },
+    "model_path": "C:\\Users\\Srikar\\OneDrive\\Desktop\\project dm4ml\\models\\svd_model_20260711_211156.pkl",
+    "params": {
+      "n_factors": 50,
+      "algorithm": "SVD"
+    }
+  },
+  "content_based": {
+    "model_path": "C:\\Users\\Srikar\\OneDrive\\Desktop\\project dm4ml\\models\\content_based_model_20260711_211156.pkl",
+    "params": {
+      "algorithm": "cosine_similarity"
+    }
+  },
+  "mlflow_run_id": "9072dd0157394ce0897b2b9b4f096485",
+  "sample_recommendations": {
+    "user_id": 207,
+    "recommendations": [
+      {
+        "product_id": 273,
+        "predicted_rating": 3.21
+      },
+      {
+        "product_id": 156,
+        "predicted_rating": 3.17
+      },
+      {
+        "product_id": 177,
+        "predicted_rating": 3.01
+      },
+      {
+        "product_id": 380,
+        "predicted_rating": 2.97
+      },
+      {
+        "product_id": 259,
+        "predicted_rating": 2.95
+      }
+    ]
+  }
+}

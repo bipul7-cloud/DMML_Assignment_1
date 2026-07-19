@@ -1,0 +1,639 @@
+{
+  "users": {
+    "source": "users",
+    "timestamp": "20260711_211004",
+    "profile": {
+      "shape": {
+        "rows": 1000,
+        "columns": 8
+      },
+      "dtypes": {
+        "user_id": "int64",
+        "username": "object",
+        "email": "object",
+        "age": "float64",
+        "gender": "object",
+        "country": "object",
+        "signup_date": "object",
+        "is_premium": "bool"
+      },
+      "memory_usage_mb": 0.35,
+      "numeric_summary": {
+        "user_id": {
+          "count": 1000.0,
+          "mean": 500.5,
+          "std": 288.82,
+          "min": 1.0,
+          "25%": 250.75,
+          "50%": 500.5,
+          "75%": 750.25,
+          "max": 1000.0
+        },
+        "age": {
+          "count": 952.0,
+          "mean": 44.14,
+          "std": 14.9,
+          "min": 18.0,
+          "25%": 32.0,
+          "50%": 44.0,
+          "75%": 57.0,
+          "max": 70.0
+        }
+      },
+      "categorical_summary": {
+        "username": {
+          "unique_values": 996,
+          "top_values": {
+            "xjohnson": 2,
+            "tanderson": 2,
+            "allendanielle": 2,
+            "zmendoza": 2,
+            "eric51": 1
+          }
+        },
+        "email": {
+          "unique_values": 997,
+          "top_values": {
+            "lisa46@example.org": 2,
+            "ejohnson@example.org": 2,
+            "leescott@example.com": 2,
+            "smiller@example.net": 1,
+            "ywolf@example.com": 1
+          }
+        },
+        "gender": {
+          "unique_values": 3,
+          "top_values": {
+            "Other": 326,
+            "F": 323,
+            "M": 322
+          }
+        },
+        "country": {
+          "unique_values": 194,
+          "top_values": {
+            "KW": 11,
+            "LC": 11,
+            "MG": 10,
+            "BO": 9,
+            "DO": 9
+          }
+        },
+        "signup_date": {
+          "unique_values": 658,
+          "top_values": {
+            "2025-02-22": 7,
+            "2025-12-02": 5,
+            "2024-06-17": 5,
+            "2026-04-29": 4,
+            "2025-02-27": 4
+          }
+        }
+      }
+    },
+    "schema": {
+      "missing_columns": [],
+      "extra_columns": [],
+      "column_count": 8,
+      "expected_count": 8,
+      "issues": []
+    },
+    "missing_values": {
+      "total_missing_cells": 84,
+      "total_missing_pct": 1.05,
+      "per_column": {
+        "age": {
+          "count": 48,
+          "pct": 4.8
+        },
+        "gender": {
+          "count": 29,
+          "pct": 2.9
+        },
+        "country": {
+          "count": 7,
+          "pct": 0.7
+        }
+      }
+    },
+    "duplicates": {
+      "total_duplicates": 0,
+      "duplicate_pct": 0.0
+    },
+    "range_checks": {
+      "range_issues": [],
+      "n_issues": 0
+    },
+    "quality_status": "PASS",
+    "quality_issues": []
+  },
+  "products": {
+    "source": "products",
+    "timestamp": "20260711_211004",
+    "profile": {
+      "shape": {
+        "rows": 500,
+        "columns": 10
+      },
+      "dtypes": {
+        "product_id": "int64",
+        "name": "object",
+        "category": "object",
+        "subcategory": "object",
+        "price": "float64",
+        "brand": "object",
+        "avg_rating": "float64",
+        "n_reviews": "int64",
+        "in_stock": "bool",
+        "description": "object"
+      },
+      "memory_usage_mb": 0.23,
+      "numeric_summary": {
+        "product_id": {
+          "count": 500.0,
+          "mean": 250.5,
+          "std": 144.48,
+          "min": 1.0,
+          "25%": 125.75,
+          "50%": 250.5,
+          "75%": 375.25,
+          "max": 500.0
+        },
+        "price": {
+          "count": 500.0,
+          "mean": 245.35,
+          "std": 140.85,
+          "min": 5.54,
+          "25%": 128.0,
+          "50%": 236.58,
+          "75%": 360.76,
+          "max": 498.99
+        },
+        "avg_rating": {
+          "count": 500.0,
+          "mean": 3.0,
+          "std": 1.16,
+          "min": 1.0,
+          "25%": 2.0,
+          "50%": 3.0,
+          "75%": 4.0,
+          "max": 5.0
+        },
+        "n_reviews": {
+          "count": 500.0,
+          "mean": 2357.78,
+          "std": 1448.51,
+          "min": 36.0,
+          "25%": 1070.0,
+          "50%": 2332.5,
+          "75%": 3581.25,
+          "max": 4961.0
+        }
+      },
+      "categorical_summary": {
+        "name": {
+          "unique_values": 500,
+          "top_values": {
+            "Implemented directional methodology": 1,
+            "Extended modular frame": 1,
+            "Object-based exuding protocol": 1,
+            "Reduced actuating strategy": 1,
+            "Customer-focused systematic toolset": 1
+          }
+        },
+        "category": {
+          "unique_values": 10,
+          "top_values": {
+            "Books": 60,
+            "Beauty": 57,
+            "Grocery": 57,
+            "Toys": 54,
+            "Health": 54
+          }
+        },
+        "subcategory": {
+          "unique_values": 50,
+          "top_values": {
+            "Grocery_5": 17,
+            "Grocery_1": 16,
+            "Books_3": 15,
+            "Books_5": 14,
+            "Health_5": 14
+          }
+        },
+        "brand": {
+          "unique_values": 490,
+          "top_values": {
+            "Johnson Group": 3,
+            "Johnson-Hill": 2,
+            "Jackson Inc": 2,
+            "Wilson Inc": 2,
+            "Allen Group": 2
+          }
+        },
+        "description": {
+          "unique_values": 500,
+          "top_values": {
+            "Out final wrong but you religious long.": 1,
+            "Still decision run special red apply tend condition maintain.": 1,
+            "Front question wrong serious hospital month executive recent crime task hour capital sell.": 1,
+            "Kind lot today decide source crime prepare gun task.": 1,
+            "Unit benefit wind conference appear woman practice order wide.": 1
+          }
+        }
+      }
+    },
+    "schema": {
+      "missing_columns": [],
+      "extra_columns": [],
+      "column_count": 10,
+      "expected_count": 10,
+      "issues": []
+    },
+    "missing_values": {
+      "total_missing_cells": 0,
+      "total_missing_pct": 0.0,
+      "per_column": {}
+    },
+    "duplicates": {
+      "total_duplicates": 0,
+      "duplicate_pct": 0.0
+    },
+    "range_checks": {
+      "range_issues": [],
+      "n_issues": 0
+    },
+    "quality_status": "PASS",
+    "quality_issues": []
+  },
+  "clickstream": {
+    "source": "clickstream",
+    "timestamp": "20260711_211004",
+    "profile": {
+      "shape": {
+        "rows": 51000,
+        "columns": 8
+      },
+      "dtypes": {
+        "event_id": "object",
+        "user_id": "int64",
+        "product_id": "int64",
+        "event_type": "object",
+        "timestamp": "object",
+        "session_id": "object",
+        "device": "object",
+        "page_url": "object"
+      },
+      "memory_usage_mb": 22.7,
+      "numeric_summary": {
+        "user_id": {
+          "count": 51000.0,
+          "mean": 500.31,
+          "std": 288.5,
+          "min": 1.0,
+          "25%": 249.0,
+          "50%": 499.0,
+          "75%": 751.0,
+          "max": 1000.0
+        },
+        "product_id": {
+          "count": 51000.0,
+          "mean": 250.54,
+          "std": 144.68,
+          "min": 1.0,
+          "25%": 126.0,
+          "50%": 251.0,
+          "75%": 376.0,
+          "max": 500.0
+        }
+      },
+      "categorical_summary": {
+        "event_id": {
+          "unique_values": 50000,
+          "top_values": {
+            "7675743e-baed-4d82-aecb-d4145b6a9cd3": 3,
+            "d9e7585b-7b4a-400a-8694-7af3c0f1471d": 3,
+            "7f7760e0-a8e8-41e7-9d42-b146cffaae84": 3,
+            "7eb17692-8557-4e06-a0de-dab1f58e3804": 3,
+            "ad7a1047-58be-4e74-8cd8-8e72d1c1f090": 3
+          }
+        },
+        "event_type": {
+          "unique_values": 5,
+          "top_values": {
+            "view": 20506,
+            "click": 12719,
+            "add_to_cart": 7700,
+            "wishlist": 5092,
+            "search": 4983
+          }
+        },
+        "timestamp": {
+          "unique_values": 49845,
+          "top_values": {
+            "2026-05-07T20:25:44": 3,
+            "2026-05-28T03:42:43": 3,
+            "2026-04-16T18:18:04": 3,
+            "2026-06-21T05:53:23": 3,
+            "2026-05-02T07:45:18": 3
+          }
+        },
+        "session_id": {
+          "unique_values": 50000,
+          "top_values": {
+            "04f07e94": 3,
+            "ac91742d": 3,
+            "238d9caf": 3,
+            "89f0d60a": 3,
+            "02ee9095": 3
+          }
+        },
+        "device": {
+          "unique_values": 3,
+          "top_values": {
+            "tablet": 17087,
+            "mobile": 17008,
+            "desktop": 16905
+          }
+        },
+        "page_url": {
+          "unique_values": 500,
+          "top_values": {
+            "/product/276": 132,
+            "/product/414": 131,
+            "/product/242": 130,
+            "/product/253": 129,
+            "/product/450": 129
+          }
+        }
+      }
+    },
+    "schema": {
+      "missing_columns": [],
+      "extra_columns": [],
+      "column_count": 8,
+      "expected_count": 8,
+      "issues": []
+    },
+    "missing_values": {
+      "total_missing_cells": 0,
+      "total_missing_pct": 0.0,
+      "per_column": {}
+    },
+    "duplicates": {
+      "total_duplicates": 1000,
+      "duplicate_pct": 1.96
+    },
+    "range_checks": {
+      "range_issues": [],
+      "n_issues": 0
+    },
+    "quality_status": "PASS",
+    "quality_issues": []
+  },
+  "transactions": {
+    "source": "transactions",
+    "timestamp": "20260711_211004",
+    "profile": {
+      "shape": {
+        "rows": 10000,
+        "columns": 9
+      },
+      "dtypes": {
+        "transaction_id": "int64",
+        "user_id": "int64",
+        "product_id": "int64",
+        "quantity": "int64",
+        "unit_price": "float64",
+        "total_amount": "float64",
+        "payment_method": "object",
+        "transaction_date": "object",
+        "status": "object"
+      },
+      "memory_usage_mb": 2.53,
+      "numeric_summary": {
+        "transaction_id": {
+          "count": 10000.0,
+          "mean": 5000.5,
+          "std": 2886.9,
+          "min": 1.0,
+          "25%": 2500.75,
+          "50%": 5000.5,
+          "75%": 7500.25,
+          "max": 10000.0
+        },
+        "user_id": {
+          "count": 10000.0,
+          "mean": 497.08,
+          "std": 289.93,
+          "min": 1.0,
+          "25%": 245.0,
+          "50%": 500.0,
+          "75%": 747.0,
+          "max": 1000.0
+        },
+        "product_id": {
+          "count": 10000.0,
+          "mean": 248.36,
+          "std": 144.83,
+          "min": 1.0,
+          "25%": 122.0,
+          "50%": 246.5,
+          "75%": 374.0,
+          "max": 500.0
+        },
+        "quantity": {
+          "count": 10000.0,
+          "mean": 3.0,
+          "std": 1.41,
+          "min": 1.0,
+          "25%": 2.0,
+          "50%": 3.0,
+          "75%": 4.0,
+          "max": 5.0
+        },
+        "unit_price": {
+          "count": 10000.0,
+          "mean": 245.13,
+          "std": 141.62,
+          "min": 5.54,
+          "25%": 122.61,
+          "50%": 238.04,
+          "75%": 363.37,
+          "max": 498.99
+        },
+        "total_amount": {
+          "count": 9805.0,
+          "mean": 739.25,
+          "std": 587.53,
+          "min": 5.54,
+          "25%": 270.15,
+          "50%": 580.7,
+          "75%": 1076.88,
+          "max": 2494.95
+        }
+      },
+      "categorical_summary": {
+        "payment_method": {
+          "unique_values": 5,
+          "top_values": {
+            "cod": 2075,
+            "wallet": 1999,
+            "debit_card": 1982,
+            "upi": 1980,
+            "credit_card": 1964
+          }
+        },
+        "transaction_date": {
+          "unique_values": 9997,
+          "top_values": {
+            "2026-04-04T23:59:24": 2,
+            "2026-05-18T01:11:49": 2,
+            "2026-02-13T21:55:54": 2,
+            "2026-06-14T02:30:52": 1,
+            "2026-07-03T04:18:04": 1
+          }
+        },
+        "status": {
+          "unique_values": 4,
+          "top_values": {
+            "completed": 7995,
+            "pending": 1012,
+            "cancelled": 502,
+            "refunded": 491
+          }
+        }
+      }
+    },
+    "schema": {
+      "missing_columns": [],
+      "extra_columns": [],
+      "column_count": 9,
+      "expected_count": 9,
+      "issues": []
+    },
+    "missing_values": {
+      "total_missing_cells": 195,
+      "total_missing_pct": 0.22,
+      "per_column": {
+        "total_amount": {
+          "count": 195,
+          "pct": 1.95
+        }
+      }
+    },
+    "duplicates": {
+      "total_duplicates": 0,
+      "duplicate_pct": 0.0
+    },
+    "range_checks": {
+      "range_issues": [],
+      "n_issues": 0
+    },
+    "quality_status": "PASS",
+    "quality_issues": []
+  },
+  "ratings": {
+    "source": "ratings",
+    "timestamp": "20260711_211004",
+    "profile": {
+      "shape": {
+        "rows": 19596,
+        "columns": 5
+      },
+      "dtypes": {
+        "user_id": "int64",
+        "product_id": "int64",
+        "rating": "int64",
+        "review_text": "object",
+        "timestamp": "object"
+      },
+      "memory_usage_mb": 4.01,
+      "numeric_summary": {
+        "user_id": {
+          "count": 19596.0,
+          "mean": 500.76,
+          "std": 288.73,
+          "min": 1.0,
+          "25%": 250.0,
+          "50%": 502.0,
+          "75%": 752.0,
+          "max": 1000.0
+        },
+        "product_id": {
+          "count": 19596.0,
+          "mean": 249.24,
+          "std": 143.16,
+          "min": 1.0,
+          "25%": 126.0,
+          "50%": 249.0,
+          "75%": 371.0,
+          "max": 500.0
+        },
+        "rating": {
+          "count": 19596.0,
+          "mean": 3.04,
+          "std": 1.49,
+          "min": -1.0,
+          "25%": 2.0,
+          "50%": 3.0,
+          "75%": 4.0,
+          "max": 10.0
+        }
+      },
+      "categorical_summary": {
+        "review_text": {
+          "unique_values": 13748,
+          "top_values": {
+            "Big read sometimes real stay author speak human.": 1,
+            "As suffer lose politics better with get community market rather unit nature grow reveal visit decision indicate those class bad.": 1,
+            "Protect coach make his quality range.": 1,
+            "Traditional dark fire month stop have recent.": 1,
+            "Every key glass single begin above about attack else.": 1
+          }
+        },
+        "timestamp": {
+          "unique_values": 19584,
+          "top_values": {
+            "2026-03-04T08:11:53": 2,
+            "2026-05-27T09:36:50": 2,
+            "2026-04-24T17:39:38": 2,
+            "2026-04-22T05:40:09": 2,
+            "2026-02-15T00:04:13": 2
+          }
+        }
+      }
+    },
+    "schema": {
+      "missing_columns": [],
+      "extra_columns": [],
+      "column_count": 5,
+      "expected_count": 5,
+      "issues": []
+    },
+    "missing_values": {
+      "total_missing_cells": 5848,
+      "total_missing_pct": 5.97,
+      "per_column": {
+        "review_text": {
+          "count": 5848,
+          "pct": 29.84
+        }
+      }
+    },
+    "duplicates": {
+      "total_duplicates": 0,
+      "duplicate_pct": 0.0
+    },
+    "range_checks": {
+      "range_issues": [
+        "Ratings out of range [1-5]: 193 rows"
+      ],
+      "n_issues": 1
+    },
+    "quality_status": "WARN",
+    "quality_issues": [
+      "Range violations"
+    ]
+  }
+}

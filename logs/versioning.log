@@ -1,0 +1,92 @@
+2026-07-19 18:53:35.581 | INFO     | src.versioning.version:version_all:153 - ============================================================
+2026-07-19 18:53:35.582 | INFO     | src.versioning.version:version_all:154 - Starting Data Versioning - 20260719_185335
+2026-07-19 18:53:35.582 | INFO     | src.versioning.version:version_all:155 - ============================================================
+2026-07-19 18:53:35.734 | INFO     | src.versioning.version:version_dataset:110 -   Versioned raw_clickstream as v_20260719_185335 (hash: 7a74c5585c00...)
+2026-07-19 18:53:35.744 | INFO     | src.versioning.version:version_dataset:110 -   Versioned raw_products as v_20260719_185335 (hash: dff78e3750d4...)
+2026-07-19 18:53:35.795 | INFO     | src.versioning.version:version_dataset:110 -   Versioned raw_ratings as v_20260719_185335 (hash: d253fb1ad987...)
+2026-07-19 18:53:35.818 | INFO     | src.versioning.version:version_dataset:110 -   Versioned raw_transactions as v_20260719_185335 (hash: 981f2b28e2e5...)
+2026-07-19 18:53:35.828 | INFO     | src.versioning.version:version_dataset:110 -   Versioned raw_users as v_20260719_185335 (hash: e2cf3064aeff...)
+2026-07-19 18:53:35.986 | INFO     | src.versioning.version:version_dataset:110 -   Versioned processed_clickstream_clean as v_20260719_185335 (hash: 0c12a572e0f0...)
+2026-07-19 18:53:35.997 | INFO     | src.versioning.version:version_dataset:110 -   Versioned processed_products_clean as v_20260719_185335 (hash: 2936fc91d343...)
+2026-07-19 18:53:36.047 | INFO     | src.versioning.version:version_dataset:110 -   Versioned processed_ratings_clean as v_20260719_185335 (hash: da8e3229e37f...)
+2026-07-19 18:53:36.071 | INFO     | src.versioning.version:version_dataset:110 -   Versioned processed_transactions_clean as v_20260719_185335 (hash: 0998edc734d9...)
+2026-07-19 18:53:36.080 | INFO     | src.versioning.version:version_dataset:110 -   Versioned processed_users_clean as v_20260719_185335 (hash: e1d3c71d967b...)
+2026-07-19 18:53:36.087 | INFO     | src.versioning.version:version_dataset:110 -   Versioned features_item_features as v_20260719_185335 (hash: c612561658fe...)
+2026-07-19 18:53:36.098 | INFO     | src.versioning.version:version_dataset:110 -   Versioned features_user_features as v_20260719_185335 (hash: f3d2164bef78...)
+2026-07-19 18:53:36.115 | INFO     | src.versioning.version:version_dataset:110 -   Versioned features_user_item_features as v_20260719_185335 (hash: 26ae708f78b4...)
+2026-07-19 18:53:36.115 | INFO     | src.versioning.version:version_all:189 - 
+Versioning Summary:
+2026-07-19 18:53:36.118 | INFO     | src.versioning.version:version_all:194 - ============================================================
+2026-07-19 18:53:36.119 | INFO     | src.versioning.version:version_all:195 - Data versioning complete!
+2026-07-19 18:53:36.119 | INFO     | src.versioning.version:version_all:196 - ============================================================
+2026-07-19 18:53:36.119 | INFO     | __main__:run_data_versioning:102 - Data versioning completed.
+2026-07-19 18:53:36.120 | INFO     | __main__:run_sequential_pipeline:226 -   ✓ 7_data_versioning completed successfully
+2026-07-19 18:53:36.120 | INFO     | __main__:run_sequential_pipeline:217 - 
+==================================================
+2026-07-19 18:53:36.121 | INFO     | __main__:run_sequential_pipeline:218 - Running: 8_model_training
+2026-07-19 18:53:36.121 | INFO     | __main__:run_sequential_pipeline:219 - ==================================================
+2026-07-19 18:53:36.122 | INFO     | __main__:run_model_training:108 - TASK: Model Training
+2026-07-19 18:53:40.961 | INFO     | src.training.train:__init__:52 - MLflow tracking enabled.
+2026-07-19 18:53:40.962 | INFO     | src.training.train:train_and_evaluate:365 - ============================================================
+2026-07-19 18:53:40.962 | INFO     | src.training.train:train_and_evaluate:366 - Starting Model Training - 20260719_185338
+2026-07-19 18:53:40.963 | INFO     | src.training.train:train_and_evaluate:367 - ============================================================
+2026-07-19 18:53:40.997 | INFO     | src.training.train:_load_ratings:64 - Loaded ratings: (19403, 5)
+2026-07-19 18:53:41.002 | INFO     | src.training.train:prepare_data:72 - Train: 15522, Test: 3881
+2026-07-19 18:53:41.003 | INFO     | src.training.train:train_svd:95 - Training SVD model (n_factors=50)...
+2026-07-19 18:53:41.172 | INFO     | src.training.train:train_svd:138 -   SVD model trained: U=(1000, 50), Vt=(50, 500)
+2026-07-19 18:53:41.173 | INFO     | src.training.train:evaluate_model:184 - Evaluating model (k=[5, 10, 20])...
+2026-07-19 18:53:42.939 | INFO     | src.training.train:evaluate_model:321 -   Evaluation Results:
+2026-07-19 18:53:42.939 | INFO     | src.training.train:evaluate_model:323 -     precision@5: 0.0017
+2026-07-19 18:53:42.940 | INFO     | src.training.train:evaluate_model:323 -     recall@5: 0.0050
+2026-07-19 18:53:42.941 | INFO     | src.training.train:evaluate_model:323 -     ndcg@5: 0.0027
+2026-07-19 18:53:42.941 | INFO     | src.training.train:evaluate_model:323 -     precision@10: 0.0026
+2026-07-19 18:53:42.942 | INFO     | src.training.train:evaluate_model:323 -     recall@10: 0.0127
+2026-07-19 18:53:42.942 | INFO     | src.training.train:evaluate_model:323 -     ndcg@10: 0.0057
+2026-07-19 18:53:42.943 | INFO     | src.training.train:evaluate_model:323 -     precision@20: 0.0030
+2026-07-19 18:53:42.943 | INFO     | src.training.train:evaluate_model:323 -     recall@20: 0.0293
+2026-07-19 18:53:42.943 | INFO     | src.training.train:evaluate_model:323 -     ndcg@20: 0.0107
+2026-07-19 18:53:42.944 | INFO     | src.training.train:evaluate_model:323 -     rmse: 1.4755
+2026-07-19 18:53:42.944 | INFO     | src.training.train:evaluate_model:323 -     mae: 1.2706
+2026-07-19 18:53:42.952 | INFO     | src.training.train:save_model:332 -   Model saved: D:\AIML\Assignments\DMML\Sem2_DMML_Assignment-1_updated_varun\Sem2-DMML-Assignment-1\models\svd_model_20260719_185338.pkl
+2026-07-19 18:53:42.952 | INFO     | src.training.train:train_content_based:143 - Training content-based model...
+2026-07-19 18:53:42.961 | INFO     | src.training.train:train_content_based:173 -   Content-based model: 500 items, 12 features
+2026-07-19 18:53:42.962 | INFO     | src.training.train:evaluate_model:184 - Evaluating model (k=[5, 10, 20])...
+2026-07-19 18:53:43.347 | INFO     | src.training.train:evaluate_model:321 -   Evaluation Results:
+2026-07-19 18:53:43.348 | INFO     | src.training.train:evaluate_model:323 -     precision@5: 0.0140
+2026-07-19 18:53:43.348 | INFO     | src.training.train:evaluate_model:323 -     recall@5: 0.0521
+2026-07-19 18:53:43.349 | INFO     | src.training.train:evaluate_model:323 -     ndcg@5: 0.0460
+2026-07-19 18:53:43.349 | INFO     | src.training.train:evaluate_model:323 -     precision@10: 0.0100
+2026-07-19 18:53:43.349 | INFO     | src.training.train:evaluate_model:323 -     recall@10: 0.0691
+2026-07-19 18:53:43.350 | INFO     | src.training.train:evaluate_model:323 -     ndcg@10: 0.0525
+2026-07-19 18:53:43.350 | INFO     | src.training.train:evaluate_model:323 -     precision@20: 0.0075
+2026-07-19 18:53:43.351 | INFO     | src.training.train:evaluate_model:323 -     recall@20: 0.0948
+2026-07-19 18:53:43.351 | INFO     | src.training.train:evaluate_model:323 -     ndcg@20: 0.0600
+2026-07-19 18:53:43.353 | INFO     | src.training.train:save_model:332 -   Model saved: D:\AIML\Assignments\DMML\Sem2_DMML_Assignment-1_updated_varun\Sem2-DMML-Assignment-1\models\content_based_model_20260719_185338.pkl
+2026-07-19 18:53:44.802 | INFO     | src.training.train:train_and_evaluate:424 -   MLflow run ID: a8ec542a20e9453d961634f656a3af9c
+2026-07-19 18:53:44.816 | INFO     | src.training.train:train_and_evaluate:434 - 
+Sample recommendations for user 207:
+2026-07-19 18:53:44.817 | INFO     | src.training.train:train_and_evaluate:436 -   Product 273: 3.21
+2026-07-19 18:53:44.817 | INFO     | src.training.train:train_and_evaluate:436 -   Product 156: 3.17
+2026-07-19 18:53:44.818 | INFO     | src.training.train:train_and_evaluate:436 -   Product 177: 3.01
+2026-07-19 18:53:44.818 | INFO     | src.training.train:train_and_evaluate:436 -   Product 380: 2.97
+2026-07-19 18:53:44.818 | INFO     | src.training.train:train_and_evaluate:436 -   Product 259: 2.95
+2026-07-19 18:53:44.819 | INFO     | src.training.train:train_and_evaluate:442 - 
+Performance report saved to D:\AIML\Assignments\DMML\Sem2_DMML_Assignment-1_updated_varun\Sem2-DMML-Assignment-1\reports\model_performance_20260719_185338.json
+2026-07-19 18:53:44.820 | INFO     | src.training.train:train_and_evaluate:444 - ============================================================
+2026-07-19 18:53:44.820 | INFO     | src.training.train:train_and_evaluate:445 - Model training and evaluation complete!
+2026-07-19 18:53:44.820 | INFO     | src.training.train:train_and_evaluate:446 - ============================================================
+2026-07-19 18:53:44.824 | INFO     | __main__:run_model_training:112 - Model training completed.
+2026-07-19 18:53:44.825 | INFO     | __main__:run_sequential_pipeline:226 -   ✓ 8_model_training completed successfully
+2026-07-19 18:53:44.827 | INFO     | __main__:run_sequential_pipeline:242 - 
+======================================================================
+2026-07-19 18:53:44.827 | INFO     | __main__:run_sequential_pipeline:243 -   Pipeline Execution Summary
+2026-07-19 18:53:44.828 | INFO     | __main__:run_sequential_pipeline:244 - ======================================================================
+2026-07-19 18:53:44.828 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 1_data_generation: SUCCESS
+2026-07-19 18:53:44.829 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 2_data_ingestion: SUCCESS
+2026-07-19 18:53:44.829 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 3_data_validation: SUCCESS
+2026-07-19 18:53:44.829 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 4_data_preparation: SUCCESS
+2026-07-19 18:53:44.830 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 5_feature_engineering: SUCCESS
+2026-07-19 18:53:44.830 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 6_feature_store: SUCCESS
+2026-07-19 18:53:44.831 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 7_data_versioning: SUCCESS
+2026-07-19 18:53:44.831 | INFO     | __main__:run_sequential_pipeline:248 -   ✓ 8_model_training: SUCCESS
+2026-07-19 18:53:44.831 | INFO     | __main__:run_sequential_pipeline:249 - ======================================================================

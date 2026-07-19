@@ -1,0 +1,74 @@
+{
+  "user_features": {
+    "n_features": 14,
+    "n_users": 1000,
+    "features": [
+      "user_id",
+      "total_ratings",
+      "avg_rating",
+      "rating_std",
+      "total_purchases",
+      "total_spend",
+      "avg_order_value",
+      "total_clicks",
+      "view_count",
+      "add_to_cart_count",
+      "account_age_days",
+      "is_premium",
+      "gender_encoded",
+      "purchase_frequency",
+      "activity_score"
+    ],
+    "description": {
+      "total_ratings": "Number of ratings given by user",
+      "avg_rating": "Average rating given by user",
+      "rating_std": "Standard deviation of user ratings",
+      "total_purchases": "Total completed purchases",
+      "total_spend": "Total amount spent",
+      "avg_order_value": "Average transaction amount",
+      "total_clicks": "Total clickstream events",
+      "purchase_frequency": "Purchases per day since signup",
+      "activity_score": "Weighted engagement score"
+    }
+  },
+  "item_features": {
+    "n_features": 12,
+    "n_items": 500,
+    "features": [
+      "product_id",
+      "total_ratings",
+      "avg_user_rating",
+      "rating_variance",
+      "total_purchases",
+      "total_revenue",
+      "total_views",
+      "price",
+      "category_encoded",
+      "in_stock",
+      "price_normalized",
+      "view_to_purchase_ratio",
+      "popularity_score"
+    ],
+    "description": {
+      "total_ratings": "Number of ratings received",
+      "avg_user_rating": "Average rating from users",
+      "total_purchases": "Total purchase count",
+      "total_revenue": "Total revenue from product",
+      "total_views": "Total view count",
+      "view_to_purchase_ratio": "Conversion rate from view to purchase",
+      "popularity_score": "Weighted popularity metric"
+    }
+  },
+  "user_item_features": {
+    "n_pairs": 19403,
+    "features": [
+      "user_id",
+      "product_id",
+      "rating",
+      "n_interactions",
+      "has_viewed",
+      "has_carted",
+      "has_purchased"
+    ]
+  }
+}

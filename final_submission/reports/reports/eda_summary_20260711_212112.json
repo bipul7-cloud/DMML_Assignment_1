@@ -1,0 +1,136 @@
+{
+  "users": {
+    "total_users": 1000,
+    "age_distribution": {
+      "mean": 44.136,
+      "std": 14.533503594341136,
+      "min": 18,
+      "max": 70
+    },
+    "gender_distribution": {
+      "Other": 326,
+      "F": 323,
+      "M": 322,
+      "Unknown": 29
+    },
+    "premium_rate": 0.474,
+    "countries": 194
+  },
+  "products": {
+    "total_products": 500,
+    "categories": 10,
+    "category_distribution": {
+      "Books": 60,
+      "Beauty": 57,
+      "Grocery": 57,
+      "Toys": 54,
+      "Health": 54,
+      "Automotive": 46,
+      "Sports": 45,
+      "Clothing": 43,
+      "Home & Kitchen": 43,
+      "Electronics": 41
+    },
+    "price_stats": {
+      "mean": 245.34589999999997,
+      "std": 140.8476166458618,
+      "min": 5.54,
+      "max": 498.99
+    },
+    "avg_rating_stats": {
+      "mean": 2.9993999999999996,
+      "std": 1.1611529582207374
+    },
+    "in_stock_rate": 0.736
+  },
+  "clickstream": {
+    "total_events": 50000,
+    "unique_users": 1000,
+    "unique_products": 500,
+    "event_distribution": {
+      "view": 20095,
+      "click": 12448,
+      "add_to_cart": 7571,
+      "wishlist": 4983,
+      "search": 4903
+    },
+    "device_distribution": {
+      "tablet": 16732,
+      "mobile": 16676,
+      "desktop": 16592
+    },
+    "hourly_distribution": {
+      "0": 2074,
+      "1": 2091,
+      "2": 2105,
+      "3": 2066,
+      "4": 2019,
+      "5": 2086,
+      "6": 2106,
+      "7": 2153,
+      "8": 2133,
+      "9": 2052,
+      "10": 2074,
+      "11": 1998,
+      "12": 2142,
+      "13": 2123,
+      "14": 2033,
+      "15": 2124,
+      "16": 2052,
+      "17": 2089,
+      "18": 2162,
+      "19": 1981,
+      "20": 2070,
+      "21": 2147,
+      "22": 2068,
+      "23": 2052
+    },
+    "duplicates_removed": 1000
+  },
+  "transactions": {
+    "total_transactions": 10000,
+    "completed_transactions": 7995,
+    "unique_buyers": 1000,
+    "status_distribution": {
+      "completed": 7995,
+      "pending": 1012,
+      "cancelled": 502,
+      "refunded": 491
+    },
+    "payment_distribution": {
+      "cod": 2075,
+      "wallet": 1999,
+      "debit_card": 1982,
+      "upi": 1980,
+      "credit_card": 1964
+    },
+    "amount_stats": {
+      "mean": 739.8121800000001,
+      "median": 579.56,
+      "total_revenue": 5913771.289999999
+    }
+  },
+  "ratings": {
+    "total_ratings": 19403,
+    "unique_users": 1000,
+    "unique_products": 500,
+    "rating_distribution": {
+      "1": 3814,
+      "2": 3816,
+      "3": 3857,
+      "4": 3829,
+      "5": 4087
+    },
+    "avg_rating": 3.0288099778384785,
+    "sparsity": 0.9612,
+    "invalid_removed": 193,
+    "ratings_per_user": {
+      "mean": 19.403,
+      "median": 19.0
+    },
+    "ratings_per_product": {
+      "mean": 38.806,
+      "median": 39.0
+    }
+  }
+}
