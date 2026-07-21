@@ -1,179 +1,97 @@
-VIDEO WALKTHROUGH SCRIPT — RecoMart Data Pipeline
-===================================================
-Duration: 5–10 minutes
-Record your screen while following this script.
-
-
-[0:00 – 0:30] INTRODUCTION
-----------------------------
-"Hi, this is a walkthrough of our project: End-to-End Data Management Pipeline
-for a Recommendation System, built for RecoMart — an e-commerce startup.
-
-This pipeline covers the complete lifecycle: data ingestion from CSV files
-and REST APIs, data validation, cleaning, feature engineering, a feature store,
-data versioning, model training with MLflow tracking, and pipeline orchestration
-with Prefect."
-
-ACTION: Show the README.md briefly in VS Code.
-
-
-[0:30 – 1:00] PROJECT STRUCTURE
----------------------------------
-"Let me walk through the project structure."
-
-ACTION: Open a terminal and run:
-  dir /s /b src\*.py
-  or show the folder tree in VS Code's explorer sidebar.
-
-"We have 8 modular Python packages under src/ — ingestion, validation,
-preparation, transformation, feature_store, versioning, training,
-and orchestration. Each one handles one stage of the pipeline."
-
-
-[1:00 – 2:00] RUNNING THE FULL PIPELINE
------------------------------------------
-"Let me run the entire pipeline end-to-end."
-
-ACTION: Run in terminal:
-  python src/orchestration/pipeline.py
-
-"The orchestrator calls all 8 stages sequentially. It uses Prefect tasks
-with retry policies when available, and falls back to a sequential runner."
-
-Wait for it to finish. Point out:
-- Each stage prints its name and a SUCCESS marker
-- The final summary shows all 8 stages with checkmarks
-
-
-[2:00 – 3:00] DATA GENERATION & INGESTION
--------------------------------------------
-"Stage 1 generates synthetic data using the Faker library — 1000 users,
-500 products, 50,000 clickstream events, 10,000 transactions, and about
-20,000 ratings. We intentionally inject missing values, duplicates, and
-out-of-range ratings to test our validation pipeline.
-
-Stage 2 ingests data from two source types: CSV files from the local
-filesystem, and product data from the FakeStore REST API — demonstrating
-heterogeneous data ingestion with retry logic."
-
-ACTION: Show the data/raw/ folder structure — files partitioned by source
-and timestamped. Open one CSV briefly.
-Also show logs/ingestion.log for audit trail.
-
-
-[3:00 – 4:00] DATA VALIDATION & QUALITY REPORT
--------------------------------------------------
-"Stage 3 validates every dataset. It checks for schema mismatches,
-missing values, duplicate rows, and range violations — for example,
-ratings must be between 1 and 5."
-
-ACTION: Open reports/data_quality_report_*.json
-Point out: per-dataset status (PASS/WARN), missing percentages,
-duplicate counts, range issues detected.
-
-Also show the screenshot: final_submission/screenshots/02_data_quality_report.png
-
-
-[4:00 – 5:00] DATA PREPARATION & EDA
----------------------------------------
-"Stage 4 cleans the data: imputes missing ages with the median, encodes
-categorical variables like gender and product category, normalizes prices
-with MinMaxScaler, and removes invalid ratings."
-
-ACTION: Open notebooks/eda_analysis.ipynb
-Run a few cells to show:
-- User age distribution histogram
-- Product category bar chart
-- Rating distribution
-- User-item interaction heatmap (sparsity visualization)
-
-"The interaction matrix has about 96% sparsity — very typical for
-recommendation systems."
-
-
-[5:00 – 6:00] FEATURE ENGINEERING
-------------------------------------
-"Stage 5 creates three feature tables:
-- User features: activity frequency, average rating, total spend, etc.
-- Item features: popularity score, view-to-purchase conversion, etc.
-- User-item features: interaction flags and counts.
-
-We also generate a SQL schema documenting the feature warehouse."
-
-ACTION: Show data/features/user_features.csv (first few rows)
-Show data/features/schema.sql
-
-
-[6:00 – 7:00] FEATURE STORE & VERSIONING
--------------------------------------------
-"Stage 6 registers all features in our custom feature store — a SQLite-based
-metadata registry that tracks feature names, versions, data types, source
-tables, and transformations. Each version gets a timestamped snapshot.
-
-Stage 7 versions all datasets — raw, processed, and features — using
-SHA-256 hashes. If the content hasn't changed, it skips versioning."
-
-ACTION: Show data/feature_store/registry.db contents (screenshot 10)
-Show data/versions/manifest.json briefly
-Show the screenshot: final_submission/screenshots/11_data_versioning.png
-
-
-[7:00 – 8:30] MODEL TRAINING & EVALUATION
---------------------------------------------
-"Stage 8 trains two recommendation models:
-
-First, SVD collaborative filtering — truncated SVD on the user-item rating
-matrix with 50 latent factors. This gives us RMSE of about 1.47.
-
-Second, content-based filtering — cosine similarity on item feature vectors.
-
-Both models are evaluated with Precision@K, Recall@K, and NDCG@K for
-K equals 5, 10, and 20."
-
-ACTION: Show the model performance screenshot (09_model_performance.png)
-Point out: content-based actually outperforms SVD on ranking metrics
-because it uses real feature similarity rather than sparse random ratings.
-
-"All experiments are tracked in MLflow — parameters, metrics, and model
-artifacts are logged with unique run IDs."
-
-ACTION: Show the MLflow tracking screenshot (13_mlflow_tracking.png)
-Show models/ folder with the .pkl files
-
-
-[8:30 – 9:30] PIPELINE ORCHESTRATION
----------------------------------------
-"Everything is orchestrated by our pipeline runner. When Prefect is
-available, it defines a DAG with 8 tasks connected by wait_for
-dependencies, with retries for ingestion tasks. Otherwise it runs
-sequentially with full error handling."
-
-ACTION: Show src/orchestration/pipeline.py briefly
-Show the pipeline execution screenshot (01_pipeline_execution.png)
-Show logs/pipeline.log
-
-
-[9:30 – 10:00] CONCLUSION
-----------------------------
-"To summarize: we built a complete, modular data management pipeline
-covering all 10 tasks — from data ingestion through model training.
-Every stage produces structured logs and reports. Data is versioned,
-features are registered in a store, and experiments are tracked.
-
-The pipeline is fully reproducible — just run:
-  pip install -r requirements.txt
-  python src/orchestration/pipeline.py
-
-Thank you for watching."
-
-ACTION: Show the final pipeline summary one more time.
-
-
-===================================================
-TIPS FOR RECORDING:
-- Use OBS Studio or Windows Game Bar (Win+G) to record
-- Resolution: 1080p recommended
-- Speak clearly and at moderate pace
-- Keep terminal font large enough to read
-- Upload to Google Drive and set sharing to "Anyone with BITS email"
-===================================================
+Here’s the final full 10‑minute walkthrough script for Group 47
+Group 47 — RecoMart Data Pipeline Walkthrough
+[0:00 – 0:30] Introduction
+"Hello, we are Group 47, and in this video we’ll present our assignment: an end‑to‑end data management pipeline for RecoMart, an e‑commerce startup.
+This pipeline demonstrates the entire lifecycle — ingestion from CSVs and REST APIs, validation, cleaning, feature engineering, feature storage, dataset versioning, model training with MLflow, and orchestration using Prefect.
+Working on this project helped us understand how different stages of a data pipeline connect together in practice."
+Action: Show the README.md file in Terminal.
+ 
+[0:30 – 1:00] Project Structure
+"First, let’s look at the project layout."
+Action: In terminal run:
+Code
+ 
+Plain Text
+dir /s /b src\*.py
+ 
+—or show the folder tree in Terminal.
+"We organized the pipeline into 8 modular packages under src/: ingestion, validation, preparation, transformation, feature_store, versioning, training, and orchestration. Each package represents one stage.
+As a group, we realized that modular design makes debugging and improvements much easier."
+ 
+[1:00 – 2:00] Running the Pipeline
+"Now we’ll run the pipeline end‑to‑end."
+Action: Run:
+Code
+ 
+Plain Text
+python src/orchestration/pipeline.py
+ 
+"The orchestrator executes all 8 stages sequentially. Prefect handles retries when available, otherwise it runs in a simple sequential mode.
+We noticed that seeing each stage print SUCCESS markers gave us confidence that the pipeline was working correctly. The final summary with checkmarks was especially satisfying."
+ 
+[2:00 – 3:00] Data Generation & Ingestion
+"In Stage 1, synthetic data is generated using Faker: 1000 users, 500 products, 50,000 clickstream events, 10,000 transactions, and about 20,000 ratings. We intentionally added missing values, duplicates, and invalid ratings to test validation.
+Stage 2 ingests data from two sources — local CSV files and product data from the FakeStore REST API. This showed us how heterogeneous ingestion works with retry logic."
+Action: Show data/raw/ folder, open one CSV, and display logs/ingestion.log.
+Reflection: "This stage taught us how important it is to simulate real‑world messy data. It was tricky at first, but it made validation meaningful."
+ 
+[3:00 – 4:00] Validation & Quality Report
+"Stage 3 validates datasets for schema mismatches, missing values, duplicates, and range violations (like ratings between 1 and 5)."
+Action: Open reports/data_quality_report_*.json. Highlight PASS/WARN statuses, missing percentages, duplicate counts, and range issues. Show screenshot: final_submission/screenshots/02_data_quality_report.png.
+Reflection: "We learned that validation reports are not just technical outputs — they help us decide whether data is trustworthy enough for analysis."
+ 
+[4:00 – 5:00] Preparation & EDA
+"Stage 4 prepares the data: imputes missing ages, encodes categorical variables, normalizes prices, and removes invalid ratings.
+Exploratory analysis included user age distribution, product categories, rating distribution, and a user‑item heatmap. The interaction matrix showed ~96% sparsity, which is typical for recommendation systems."
+Action: Run cells in notebooks/eda_analysis.ipynb.
+Reflection: "This stage helped us appreciate how sparse recommendation data can be. Visualizing it made the challenge very clear."
+ 
+[5:00 – 6:00] Feature Engineering
+"Stage 5 builds three feature tables:
+User features (activity, average rating, spend)
+Item features (popularity, conversion rates)
+User‑item features (interaction flags and counts)
+We also created a SQL schema for the feature warehouse."
+Action: Show data/features/user_features.csv and data/features/schema.sql.
+Reflection: "Designing features was one of the most creative parts. We debated which features would actually help the models, and it felt like solving a puzzle."
+ 
+[6:00 – 7:00] Feature Store & Versioning
+"Stage 6 registers features in a custom SQLite feature store, which tracks names, versions, data types, sources, and transformations. Each snapshot is timestamped.
+Stage 7 versions datasets using SHA‑256 hashes, skipping unchanged files."
+Action: Display data/feature_store/registry.db, data/versions/manifest.json, and screenshot 11_data_versioning.png.
+Reflection: "We realized versioning is essential for reproducibility. At first, we underestimated it, but later we saw how it prevents confusion when datasets evolve."
+ 
+[7:00 – 8:30] Model Training & Evaluation
+"Stage 8 trains two models:
+SVD collaborative filtering with 50 latent factors, RMSE ≈ 1.47
+Content‑based filtering using cosine similarity on item features
+Both are evaluated with Precision@K, Recall@K, and NDCG@K for K=5,10,20. Interestingly, the content‑based model performed better on ranking metrics because it uses actual feature similarity instead of sparse ratings."
+Action: Show screenshot 09_model_performance.png. "All experiments are tracked in MLflow with parameters, metrics, and artifacts logged."
+Action: Show MLflow screenshot 13_mlflow_tracking.png and models/ folder with .pkl files.
+Reflection: "This stage was challenging. We had to interpret metrics carefully, and it taught us that lower RMSE doesn’t always mean better recommendations."
+ 
+[8:30 – 9:30] Orchestration
+"The pipeline runner orchestrates everything. With Prefect, it builds a DAG of 8 tasks with dependencies and retries. Without Prefect, it runs sequentially with error handling."
+Action: Show src/orchestration/pipeline.py, screenshot 01_pipeline_execution.png, and logs/pipeline.log.
+Reflection: "Learning orchestration was eye‑opening. We saw how automation ensures reliability, and it felt like the glue holding all stages together."
+ 
+[9:30 – 10:00] Conclusion
+"To conclude: Group 47 built a modular, reproducible pipeline covering ingestion through training. Each stage outputs logs and reports, datasets are versioned, features are stored, and experiments are tracked.
+To reproduce:
+Code
+ 
+Plain Text
+pip install -r requirements.txt
+python src/orchestration/pipeline.py
+ 
+This assignment taught us not just technical skills, but also teamwork — dividing tasks, integrating modules, and reflecting on results. Thank you for watching!"
+Action: Show the final pipeline summary again.
+Lessons Learned (Reflection Section)
+"As Group 47, here are the key lessons we learned:
+Building synthetic data helped us understand the importance of testing with imperfect datasets.
+Validation reports are critical for trust in data — we now see them as decision‑making tools, not just technical checks.
+Feature engineering requires creativity and collaboration; debating which features matter improved our teamwork.
+Dataset versioning is essential for reproducibility, especially when multiple people are working together.
+Model evaluation taught us that metrics must be interpreted carefully — accuracy alone doesn’t guarantee usefulness.
+Orchestration showed us how automation ties everything together, making the pipeline reliable and scalable.
+Overall, this project gave us both technical knowledge and teamwork experience, which we believe are equally valuable."
